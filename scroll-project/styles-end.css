@@ -59,6 +59,7 @@ Variables
 Global Styles
 ===============
 */
+
 html {
   scroll-behavior: smooth;
 }
@@ -183,11 +184,11 @@ p {
     width: 95vw;
   }
 }
-main {
+/*main {
   min-height: 100vh;
   display: grid;
   place-items: center;
-}
+}*/
 /*
 =============== 
 Scroll
@@ -198,6 +199,7 @@ nav {
   background: var(--clr-white);
   padding: 1rem 1.5rem;
 }
+
 /* fixed nav */
 .fixed-nav {
   position: fixed;
@@ -213,6 +215,7 @@ nav {
 .fixed-nav .links a:hover {
   color: var(--clr-secondary);
 }
+
 /* .fixed-nav .links-container {
   height: auto !important;
 } */
@@ -257,6 +260,7 @@ nav {
 .links a:hover {
   color: var(--clr-grey-1);
 }
+/* @media screen and (min-width: 800px)*/
 @media screen and (min-width: 800px) {
   nav {
     background: transparent;
@@ -297,6 +301,7 @@ nav {
     color: var(--clr-white);
   }
 }
+
 /* hero */
 header {
   min-height: 100vh;
@@ -320,6 +325,8 @@ header {
   margin-bottom: 1.25rem;
 }
 @media screen and (min-width: 768px) {
+  
+   
   .wrapper p {
     max-width: 40rem;
   }
@@ -397,12 +404,22 @@ footer p {
 }
 .slide{
 
-width: 60%;
+width: 65%;
 margin: auto;
 }
 #field{
   z-index: -98;
   position: relative;
   text-align: center;
-  top: 50px;
+  /*top: 260px;*/
+  bottom: 10px;
+  }
+#about {
+  overflow-y: auto;
+}
+
+#services{
+  z-index: -97;
+  position: relative;
+  bottom: 3px;
 }
